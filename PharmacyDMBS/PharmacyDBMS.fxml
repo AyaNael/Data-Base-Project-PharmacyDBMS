@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DashboardController">
+	<left>
+		<AnchorPane prefHeight="200.0" prefWidth="230.0" style="-fx-background-color: Gold;" BorderPane.alignment="CENTER">
+			<children>
+				<ImageView fx:id="pharmascitImageView" fitHeight="126.0" fitWidth="113.0" layoutX="59.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../../../../../Downloads/Pharmacit.png" />
+					</image>
+				</ImageView>
+				<Label alignment="CENTER" layoutX="42.0" layoutY="142.0" prefHeight="18.0" prefWidth="148.0" text="Welcome" textFill="WHITE">
+					<font>
+						<Font name="Bauhaus 93" size="18.0" />
+					</font>
+				</Label>
+				<Label fx:id="name" alignment="CENTER" layoutX="15.0" layoutY="162.0" prefHeight="26.0" prefWidth="206.0" textFill="WHITE">
+					<font>
+						<Font name="Bauhaus 93" size="18.0" />
+					</font>
+				</Label>
+				<Line endX="100.0" layoutX="116.0" layoutY="194.0" startX="-100.0" stroke="WHITE" strokeWidth="3.0" />
+				<Button fx:id="dashboardBT" alignment="TOP_LEFT" layoutX="16.0" layoutY="205.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="10.0" prefWidth="198.0" text="DashBoard">
+					<graphic>
+						<ImageView fx:id="dashboardIcon" fitHeight="24.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../../../../dashboardIcon.png" />
+							</image>
+						</ImageView>
+					</graphic>
+					<font>
+						<Font name="Berlin Sans FB Demi Bold" size="14.0" />
+					</font>
+				</Button>
+				<Button fx:id="medicineBT" alignment="TOP_LEFT" layoutX="17.0" layoutY="241.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="10.0" prefWidth="198.0" text="Medicines">
+					<graphic>
+						<ImageView fx:id="medicineIcon" fitHeight="24.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../../../../medicineIcon.png" />
+							</image>
+						</ImageView>
+					</graphic>
+					<font>
+						<Font name="Berlin Sans FB Demi Bold" size="14.0" />
+					</font>
+				</Button>
+				<Button fx:id="employeeBT" alignment="TOP_LEFT" layoutX="17.0" layoutY="277.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="10.0" prefWidth="198.0" text="Employees">
+					<graphic>
+						<ImageView fx:id="employeeIcon" fitHeight="24.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../../../../employeeIcon.png" />
+							</image>
+						</ImageView>
+					</graphic>
+					<font>
+						<Font name="Berlin Sans FB Demi Bold" size="14.0" />
+					</font>
+				</Button>
+				<Button fx:id="supplierCompanyBT" alignment="TOP_LEFT" layoutX="16.0" layoutY="313.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="10.0" prefWidth="198.0" text="Supplier Company">
+					<graphic>
+						<ImageView fx:id="supplierCompanyIcon" fitHeight="24.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../../../../supplierCompanyIcon.png" />
+							</image>
+						</ImageView>
+					</graphic>
+					<font>
+						<Font name="Berlin Sans FB Demi Bold" size="14.0" />
+					</font>
+				</Button>
+				<Button fx:id="insuranceCompanyBT" alignment="TOP_LEFT" layoutX="15.0" layoutY="350.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="10.0" prefWidth="198.0" text="Insurance Company">
+					<graphic>
+						<ImageView fx:id="insuranceCompanyIcon" fitHeight="24.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../../../../insuranceCompanyIcon.png" />
+							</image>
+						</ImageView>
+					</graphic>
+					<font>
+						<Font name="Berlin Sans FB Demi Bold" size="14.0" />
+					</font>
+				</Button>
+				<Button fx:id="insuranceCustomerBT" alignment="TOP_LEFT" layoutX="16.0" layoutY="386.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="10.0" prefWidth="198.0" text="Insurance Customer">
+					<graphic>
+						<ImageView fx:id="insuranceCustomerIcon" fitHeight="24.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../../../../insuranceCustomerIcon.png" />
+							</image>
+						</ImageView>
+					</graphic>
+					<font>
+						<Font name="Berlin Sans FB Demi Bold" size="14.0" />
+					</font>
+				</Button>
+				<Button fx:id="categoryBT" alignment="TOP_LEFT" layoutX="16.0" layoutY="422.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="10.0" prefWidth="198.0" text="Category">
+					<graphic>
+						<ImageView fx:id="categoryIcon" fitHeight="24.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../../../../categoryIcon.png" />
+							</image>
+						</ImageView>
+					</graphic>
+					<font>
+						<Font name="Berlin Sans FB Demi Bold" size="14.0" />
+					</font>
+				</Button>
+				<Button fx:id="orderBT" alignment="TOP_LEFT" layoutX="15.0" layoutY="458.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="10.0" prefWidth="198.0" text="Orders">
+					<graphic>
+						<ImageView fx:id="orderIcon" fitHeight="24.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../../../../orderIcon.png" />
+							</image>
+						</ImageView>
+					</graphic>
+					<font>
+						<Font name="Berlin Sans FB Demi Bold" size="14.0" />
+					</font>
+				</Button>
+				<Button fx:id="invoiceBT" alignment="TOP_LEFT" layoutX="16.0" layoutY="495.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="10.0" prefWidth="198.0" text="Invoices">
+					<graphic>
+						<ImageView fx:id="invoiceIcon" fitHeight="24.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../../../../invoiceIcon.png" />
+							</image>
+						</ImageView>
+					</graphic>
+					<font>
+						<Font name="Berlin Sans FB Demi Bold" size="14.0" />
+					</font>
+				</Button>
+				<Button fx:id="logoutBT" layoutX="80.0" layoutY="534.0" mnemonicParsing="false" onAction="#logOutAction" text="LogOut">
+					<font>
+						<Font name="System Bold Italic" size="12.0" />
+					</font>
+				</Button>
+			</children>
+		</AnchorPane>
+	</left>
+	<center>
+		<AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+			<children>
+				<AnchorPane fx:id="dashboardPane" layoutX="14.0" layoutY="14.0" prefHeight="550.4" prefWidth="569.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+					<children>
+						<AnchorPane fx:id="availableMedicinesDashboardPane" layoutX="14.0" layoutY="8.0" prefHeight="234.0" prefWidth="550.0" style="-fx-border-color: Gold;">
+							<children>
+								<TableView fx:id="availableMedicinesTable" editable="true" layoutX="6.0" layoutY="41.0" prefHeight="186.0" prefWidth="541.0">
+									<columns>
+										<TableColumn prefWidth="57.59997367858887" text="Par_Code" />
+                              <TableColumn prefWidth="80.79999542236328" text="Category ID" />
+										<TableColumn prefWidth="143.19998168945312" text="Name" />
+										<TableColumn prefWidth="73.5999755859375" text="Sell Price" />
+										<TableColumn prefWidth="97.60003662109375" text="Expire Date" />
+										<TableColumn prefWidth="40.000091552734375" text="Quantity" />
+                              <TableColumn prefWidth="46.40004882812502" text="Supplier Company" />
+									</columns>
+                           <cursor>
+                              <Cursor fx:constant="MOVE" />
+                           </cursor>
+								</TableView>
+								<Label alignment="CENTER" contentDisplay="CENTER" layoutX="167.0" layoutY="14.0" prefHeight="29.0" prefWidth="219.0" text="Available Medicines " textAlignment="CENTER">
+									<font>
+										<Font name="System Bold" size="14.0" />
+									</font>
+								</Label>
+							</children>
+						</AnchorPane>
+						<AnchorPane fx:id="expiredMedicinesPane" layoutX="14.0" layoutY="250.0" prefHeight="294.0" prefWidth="276.0" style="-fx-border-color: Gold; -fx-background-color: LightYellow;">
+							<children>
+								<Label alignment="CENTER" contentDisplay="CENTER" layoutX="29.0" layoutY="7.0" prefHeight="29.0" prefWidth="219.0" text="Expired Medicines " textAlignment="CENTER">
+									<font>
+										<Font name="System Bold" size="14.0" />
+									</font>
+								</Label>
+								<TableView fx:id="expiredMedicinesTable" editable="true" layoutX="6.0" layoutY="35.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="253.0" prefWidth="266.0">
+									<columns>
+										<TableColumn prefWidth="66.39997100830078" text="Name" />
+										<TableColumn prefWidth="59.20001029968262" text="Par_Code" />
+										<TableColumn minWidth="0.0" prefWidth="82.39996337890625" text="Expired Date" />
+										<TableColumn prefWidth="55.2000732421875" text="Quantity" />
+                              <TableColumn prefWidth="66.39997100830078" text="Category ID" />
+                              <TableColumn prefWidth="66.39997100830078" text="Supplier Company" />
+									</columns>
+                           <cursor>
+                              <Cursor fx:constant="MOVE" />
+                           </cursor>
+								</TableView>
+							</children>
+						</AnchorPane>
+						<AnchorPane fx:id="TotalIncomePane" layoutX="296.0" layoutY="398.0" prefHeight="143.0" prefWidth="254.0" style="-fx-border-color: Gold; -fx-background-color: LightYellow;">
+							<children>
+								<Label alignment="CENTER" contentDisplay="CENTER" layoutX="31.0" layoutY="7.0" prefHeight="29.0" prefWidth="219.0" text="Total Income" textAlignment="CENTER">
+									<font>
+										<Font name="System Bold" size="18.0" />
+									</font>
+								</Label>
+								<ImageView fitHeight="96.0" fitWidth="91.0" layoutX="6.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@../../../../incomeIcon.png" />
+									</image>
+								</ImageView>
+								<Label fx:id="dashboard_totalIncomeLB" alignment="CENTER" contentDisplay="CENTER" layoutX="106.0" layoutY="48.0" prefHeight="84.0" prefWidth="161.0" text="##### NIS">
+									<font>
+										<Font size="24.0" />
+									</font>
+								</Label>
+							</children>
+						</AnchorPane>
+						<AnchorPane fx:id="totalEmployeesPane" layoutX="296.0" layoutY="250.0" prefHeight="142.0" prefWidth="254.0" style="-fx-border-color: Gold; -fx-background-color: LightYellow;">
+							<children>
+								<Label alignment="CENTER" contentDisplay="CENTER" layoutX="31.0" layoutY="7.0" prefHeight="29.0" prefWidth="219.0" text="Total Employees" textAlignment="CENTER">
+									<font>
+										<Font name="System Bold" size="18.0" />
+									</font>
+								</Label>
+								<ImageView fitHeight="96.0" fitWidth="91.0" layoutX="6.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@../../../../employeeIcon.png" />
+									</image>
+								</ImageView>
+								<Label fx:id="dashboard_totalEmployeesLB" alignment="CENTER" contentDisplay="CENTER" layoutX="106.0" layoutY="48.0" prefHeight="84.0" prefWidth="161.0" text="# ">
+									<font>
+										<Font size="24.0" />
+									</font>
+								</Label>
+							</children>
+						</AnchorPane>
+					</children>
+				</AnchorPane>
+				<AnchorPane fx:id="medicinesPane" layoutX="14.0" layoutY="14.0" onMouseClicked="#ShowItemTable" prefHeight="568.0" prefWidth="580.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+				<AnchorPane fx:id="employeePane" prefHeight="568.0" prefWidth="580.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+				<AnchorPane fx:id="supplierCompanyPane" layoutX="7.0" layoutY="7.0" prefHeight="568.0" prefWidth="580.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+				<AnchorPane fx:id="insuranceCompanyPane" layoutX="14.0" layoutY="14.0" prefHeight="568.0" prefWidth="580.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+				<AnchorPane fx:id="insuranceCustomerPane" layoutX="14.0" layoutY="14.0" prefHeight="568.0" prefWidth="580.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+				<AnchorPane fx:id="categoryPane" layoutX="14.0" layoutY="14.0" prefHeight="568.0" prefWidth="580.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+				<AnchorPane fx:id="orderPane" layoutX="14.0" layoutY="14.0" prefHeight="568.0" prefWidth="580.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+				<AnchorPane fx:id="invoicePane" layoutX="14.0" layoutY="14.0" prefHeight="568.0" prefWidth="580.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+			</children>
+		</AnchorPane>
+	</center>
+	<top>
+		<AnchorPane prefHeight="40.0" prefWidth="800.0" style="-fx-background-color: LightYellow;" BorderPane.alignment="CENTER">
+			<children>
+				<ImageView fitHeight="46.0" fitWidth="86.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../../../../pharmacy_logo-removebg-preview.png" />
+					</image>
+				</ImageView>
+				<Label layoutX="70.0" layoutY="13.0" prefHeight="30.0" prefWidth="306.0" text="SuperCare Pharmacy Management System">
+					<font>
+						<Font name="Arial Black" size="12.0" />
+					</font>
+				</Label>
+				<Button fx:id="closeBT" layoutX="724.0" layoutY="13.0" mnemonicParsing="false" onAction="#closeBtAction" text="Close">
+					<graphic>
+						<ImageView fx:id="closeIcon" fitHeight="20.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../../../../X-Png-118.png" />
+							</image>
+						</ImageView>
+					</graphic>
+				</Button>
+			</children>
+		</AnchorPane>
+	</top>
+</BorderPane>
